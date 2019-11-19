@@ -1,0 +1,2 @@
+mybatis:
+  mapper-locations: classpath:com/boai/springbootrbq/mapper/*.xml
