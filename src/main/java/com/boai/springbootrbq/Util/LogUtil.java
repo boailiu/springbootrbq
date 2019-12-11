@@ -19,7 +19,6 @@ public class LogUtil{
     }
 
     public static void info(String s){
-        logger.info(s);
         rabbitTemplate.convertAndSend("springbootrbq",s);
     }
 }
