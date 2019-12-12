@@ -1,5 +1,6 @@
 package com.boai.springbootrbq.Util;
 
+import com.boai.springbootrbq.Mapper.LogMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -19,6 +20,8 @@ public class LogUtil{
     }
 
     public static void info(String s){
-        rabbitTemplate.convertAndSend("springbootrbq",s);
+        if(rabbitTemplate != null) {
+            rabbitTemplate.convertAndSend("springbootrbq", s);
+        }
     }
 }

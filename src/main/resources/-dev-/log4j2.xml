@@ -25,6 +25,7 @@
                 <SizeBasedTriggeringPolicy size="100 MB"/>
             </Policies>
         </RollingFile>
+        <LogRecordAppender name="LogRecordAppender"/>
     </appenders>
     <!--然后定义logger，只有定义了logger并引入的appender，appender才会生效-->
     <loggers>
@@ -36,6 +37,7 @@
             <appender-ref ref="Console"/>
             <appender-ref ref="log"/>
             <appender-ref ref="RollingFileInfo"/>
+            <appender-ref ref="LogRecordAppender"/>
         </root>
     </loggers>
 </configuration>
