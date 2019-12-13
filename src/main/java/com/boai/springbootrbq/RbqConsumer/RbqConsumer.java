@@ -23,7 +23,7 @@ public class RbqConsumer {
     @RabbitHandler
     @RabbitListener(queues = "springbootrbq")
     public void process(String message) {
-        logger.info(message);
+//        logger.info(message);
         logMapper.saveLog(message);
     }
 }
