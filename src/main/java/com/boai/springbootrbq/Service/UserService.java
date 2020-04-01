@@ -7,5 +7,5 @@ import java.util.Map;
 
 public interface UserService {
 
-
+    User getUserById(int userId);
 }

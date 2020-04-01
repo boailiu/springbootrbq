@@ -1,2 +1,2 @@
 mybatis:
-  mapper-locations: classpath:com/boai/springbootrbq/mapper/*.xml
+  mapper-locations: classpath:com/boai/springbootrbq/Mapper/*.xml
