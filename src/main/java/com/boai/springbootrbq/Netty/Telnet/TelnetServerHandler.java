@@ -39,7 +39,7 @@ public class TelnetServerHandler extends SimpleChannelInboundHandler<String> {
     }
 
     @Override
-    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+    public void channelReadComplete(ChannelHandlerContext ctx) {
         ctx.flush();
     }
 
