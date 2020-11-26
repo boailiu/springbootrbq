@@ -5,6 +5,10 @@
 # * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
 
-GET http://localhost:8877/user/getUser
+GET http://localhost:8866/user/getUser
+
+###
+
+GET http://localhost:8866/user/getPerson
 
 ###
